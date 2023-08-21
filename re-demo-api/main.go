@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"re-demo-api/api"
+	"re-demo-api/environ"
+)
+
+func init() {
+	// initialize environment
+	environ.Init()
+}
 
 func main() {
-	fmt.Println("re-demo-api")
+	// initialize api
+	api.Init()
 }
