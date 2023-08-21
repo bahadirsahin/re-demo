@@ -1,0 +1,15 @@
+# dockerignore file for 're-demo-api'
+**/*.md
+**/*_test.go
+.dockerignore
+.editorconfig
+.env
+.env.example
+.git/
+.github/
+.gitignore
+Dockerfile
+LICENSE
+Makefile
+build/
+docker-compose.yaml

@@ -12,4 +12,27 @@ help: ##
 
 ## Test
 test: ## 
-	echo "test"
+	make -i build
+	make -i run
+	make -i logs
+
+## Build
+build: ## 
+	cd re-demo-api; docker build -f Dockerfile -t re-demo-api-img:latest .
+
+## Clean
+clean: ## 
+	docker compose -p re rm -fs re-demo-api-svc
+
+## Deploy
+deploy: ## 
+	make -i build
+	make -i run
+	
+## Logs
+logs: ## 
+	docker compose -p re logs -f re-demo-api-svc
+
+## Run
+run: ## 
+	docker compose -p re up -d re-demo-api-svc
