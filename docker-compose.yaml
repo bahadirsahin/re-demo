@@ -1,0 +1,11 @@
+# docker-compose file for 're-demo'
+version: "3.9"
+
+networks:
+  re-demo-network:
+    name: re-demo-network
+    driver: bridge
+
+services:
+  # api:
+  
