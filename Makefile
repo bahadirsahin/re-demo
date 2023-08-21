@@ -12,6 +12,7 @@ help: ##
 
 ## Test
 test: ## 
+	make -i clean
 	make -i build
 	make -i run
 	make -i logs

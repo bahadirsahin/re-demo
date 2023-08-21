@@ -11,6 +11,8 @@ services:
   re-demo-api-svc:
     image: re-demo-api-img:latest
     restart: always
+    environment:
+      - API_TOKEN=${RE_DEMO_API_TOKEN}
     ports:
       - "0.0.0.0:${RE_DEMO_API_PORT}:80"
     networks:
