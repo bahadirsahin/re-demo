@@ -37,3 +37,9 @@ logs: ##
 ## Run
 run: ## 
 	docker compose -p re up -d re-demo-api-svc
+
+## Unit Test
+unit-test: ## 
+	cd re-demo-api; go test -v ./util
+	cd re-demo-api; go test -v ./service
+	

@@ -58,6 +58,6 @@ func verifyToken(c *fiber.Ctx) error {
 			)
 	}
 
-	// if verified continue
+	// if verified, continue
 	return c.Next()
 }
