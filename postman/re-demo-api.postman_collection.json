@@ -101,6 +101,80 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "packs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Token",
+						"value": "BcpPwPWmfbAqZ2w8Ux713RBKZhnLkWTE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"items\": 251,\n    \"pack_sizes\": [250, 500, 1000, 2000, 5000]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://re-demo.bahadirsahin.dev/api/v1/packs",
+					"protocol": "https",
+					"host": [
+						"re-demo",
+						"bahadirsahin",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"packs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "packs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Token",
+						"value": "BcpPwPWmfbAqZ2w8Ux713RBKZhnLkWTE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"items\": 501,\n    \"pack_sizes\": [250, 500, 1000, 2000, 5000]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://re-demo.bahadirsahin.dev/api/v1/packs",
+					"protocol": "https",
+					"host": [
+						"re-demo",
+						"bahadirsahin",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"packs"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
