@@ -11,7 +11,7 @@ bash bootstrap.sh
 bash deploy.sh
 ```
 
-3. Refer to Postman collection for sample requests.
+3. Import Postman collection and refer to sample requests.
 ```
 postman/re-demo-api.postman_collection.json
 ```
