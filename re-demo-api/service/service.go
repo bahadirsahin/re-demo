@@ -44,6 +44,11 @@ func GetPacksResponse(preq structs.PackRequest) (*structs.PackResponse, error) {
 		div := preq.PackSizes[i+1] / preq.PackSizes[i]
 		muls[i+1] = muls[i] / div
 		muls[i] %= div
+
+		if preq.PackSizes[i+1]%preq.PackSizes[i] != 0 {
+			muls[i+1]--
+			muls[i]++
+		}
 	}
 
 	// define response variables

@@ -32,10 +32,9 @@ func TestGetPacksResponse(t *testing.T) {
 	exp = &structs.PackResponse{NumOfPacks: 2, Packs: []string{"1x500", "1x250"}}
 	assert.Equal(t, res, exp)
 
-	// TODO: fix case 5
 	// case 5
-	// req := structs.PackRequest{Items: 12001, PackSizes: []int{250, 500, 1000, 2000, 5000}}
-	// res, _ := GetPacksResponse(req)
-	// exp := &structs.PackResponse{NumOfPacks: 4, Packs: []string{"2x5000", "1x2000", "1x250"}}
-	// assert.Equal(t, res, exp)
+	req = structs.PackRequest{Items: 12001, PackSizes: []int{250, 500, 1000, 2000, 5000}}
+	res, _ = GetPacksResponse(req)
+	exp = &structs.PackResponse{NumOfPacks: 4, Packs: []string{"2x5000", "1x2000", "1x250"}}
+	assert.Equal(t, res, exp)
 }
