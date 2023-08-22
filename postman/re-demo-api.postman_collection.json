@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "1c37b959-52e7-4894-96c5-12c850007a73",
+		"name": "re-demo-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15068958"
+	},
+	"item": [
+		{
+			"name": "ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://re-demo.bahadirsahin.dev/api/v1/ping",
+					"protocol": "https",
+					"host": [
+						"re-demo",
+						"bahadirsahin",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "packs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Token",
+						"value": "BcpPwPWmfbAqZ2w8Ux713RBKZhnLkWTE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"items\": 1,\n    \"pack_sizes\": [250, 500, 1000, 2000, 5000]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://re-demo.bahadirsahin.dev/api/v1/packs",
+					"protocol": "https",
+					"host": [
+						"re-demo",
+						"bahadirsahin",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"packs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "packs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Token",
+						"value": "BcpPwPWmfbAqZ2w8Ux713RBKZhnLkWTE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"items\": 250,\n    \"pack_sizes\": [250, 500, 1000, 2000, 5000]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://re-demo.bahadirsahin.dev/api/v1/packs",
+					"protocol": "https",
+					"host": [
+						"re-demo",
+						"bahadirsahin",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v1",
+						"packs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
